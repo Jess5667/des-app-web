@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+    font-family: 'Bimbo';
+    src: url('fuentes/bimbo/Bimbo Trial.ttf') format('truetype');
+}
+
+body{
+    background-color: #ffbdd7;
+    line-height: 2.0;
+}
+
+header{
+    margin-top: 40px;
+}
+
+.menu-container {
+    border-radius: 30px;
+    background-color: rgba(77, 9, 34, 0.7);
+    padding: 15px;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.main-menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.main-menu li {
+    margin: 0 15px;
+}
+
+.main-menu a {
+    color: #fcf6ef;
+    text-decoration: none;
+}
+
+.titulo-bienvenido {
+    font-family: 'Bimbo', cursive;
+    text-align: center;
+    margin: 40px 0;
+    font-size: 55px;    
+    animation: floatIn 1.2s ease-out;
+}
+
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }}
+
+.Sobre-mi {
+    font-family: 'Bimbo', cursive;
+    text-align: left;
+    margin: 40px 20px;
+    font-size: 55px;    
+}
