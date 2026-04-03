@@ -2,17 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
-@font-face {
-    font-family: 'Bimbo';
-    src: url('fuentes/bimbo/Bimbo Trial.ttf') format('truetype');
 }
 
 body{
     background-color: #ffbdd7;
     line-height: 2.0;
+    font-family: 'Poppins', sans-serif;
 }
 
 header{
@@ -23,15 +18,15 @@ header{
     border-radius: 50px;
     background-color: rgba(77, 9, 34, 0.7);
     padding: 15px;
-    width: 35%;
-    margin: 40px auto 0; /* Empuja el menú hacia abajo */
+    width: 30%;
+    margin: 40px auto 0; 
 }
 
 .main-menu ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    font-size: 20px;
+    font-size: 13px;
 }
 
 .main-menu li {
@@ -39,15 +34,60 @@ header{
 }
 
 .main-menu a {
-    color: #fcf6ef;
+    color: #ffffff;
     text-decoration: none;
 }
 
-.titulo-bienvenida {
-    font-family: 'Bimbo', cursive;
-    margin: 50px 30px; 
-    font-size: 65px;    
-    animation: floatIn 1.2s ease-out;
+.contenedor-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.welcome{
+    font-size: 18px;
+    margin-bottom: -10px;
+    color: #4d0922;
+    font-weight: 500;
+}
+
+.texto-presentacion {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Botones-contenedor-inicio{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.boton-primario, .boton-secundario {
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    width: fit-content;
+}
+
+.boton-primario {
+    background-color: #4d0922;
+    color: #ffffff;
+    border: 2px solid #4d0922;
+}
+
+.boton-secundario {
+    background-color: #fed3e3;
+    color: #4d0922;
+    border: 2px solid #653a49;
 }
 
 @keyframes floatIn {
@@ -58,20 +98,13 @@ header{
     100% {
         opacity: 1;
         transform: translateY(0) scale(1);
-    }}
-
-    .img-yo-animada {
-        display: block;
-        margin: 20px 0 20px 20px;
-        width: 200px;
-        height: auto;
-        animation: floatIn 1.2s ease-out;
-        
     }
-
-.Sobre-mi {
-    font-family: 'Bimbo', cursive;
-    text-align: left;
-    margin: 40px 20px;
-    font-size: 55px;    
 }
+
+.img-yo-animada {
+        margin: 20px;
+        width: 600px;
+        height: 550px;
+        filter: drop-shadow(0px 0px 15px rgba(255, 182, 193, 0.8));
+        animation: floatIn 1.2s ease-out;
+    }
