@@ -214,3 +214,52 @@ header{
     background-color: #551e31;
     color: #fecddf;
 }
+
+@media screen and (max-width: 1300px) {
+    body {
+        min-width: 1100px;   /* Fuerza el ancho mínimo = el de tu diseño */
+        overflow-x: auto;    /* Aparece scroll horizontal si hace falta */
+    }
+
+    .Bloque-izquierdo, .Bloque-derecho {
+        transform: scale(1.0);
+        transform-origin: center center;
+    }
+
+    .Titulo{
+        font-size: 73px;
+    }
+
+    .Welcome{
+        margin-bottom: -50px;
+        margin-left: 110px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    body {
+        min-width: 1100px;   /* Fuerza el ancho mínimo = el de tu diseño */
+        overflow-x: auto;    /* Aparece scroll horizontal si hace falta */
+    }
+
+    .Bloque-izquierdo, .Bloque-derecho {
+        transform: scale(0.9);
+        transform-origin: center center;
+    }
+
+    .Titulo{
+        font-size: 60px;
+    }
+
+    .Welcome{
+        margin-bottom: -30px;
+        margin-left: 93px;
+    }
+
+    .Footer {
+        margin-top: auto;
+        width: 100%;
+    }
+    
+}
