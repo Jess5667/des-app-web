@@ -5,6 +5,8 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(180deg, #ffc1da, #ff87a7);
     min-height: 100vh;
     line-height: 2.0;
@@ -14,6 +16,7 @@ body{
 header{
     margin-top: 40px;
 }
+
 
 .menu-container {
     border-radius: 50px;
@@ -130,6 +133,12 @@ header{
     font-weight: 500;
 }
 
+/* Cuando el mouse pasa por encima de los botones */
+.btn-principal:hover, .btn-secundario:hover {
+  transform: scale(1.03); /* crece un poquito */
+  box-shadow: 0 6px 12px #9b3b5bb4; /* sombra más marcada */
+}
+
 .btn-secundario {
     background-color: #fed3e3;
     color: #4d0922;
@@ -154,6 +163,10 @@ header{
     transform-origin: top left; /* define desde dónde se expande */
 }
 
+.Bloque-izquierdo,.Bloque-derecho{
+    overflow: visible;
+}
+
 @keyframes floatIn {
     0% {
         opacity: 0;
@@ -173,84 +186,32 @@ header{
     animation: floatIn 1.2s ease-out;
 }
 
-
-
-/*--Medida para pantallas medianas--*/
-@media screen and (max-width: 768px) {
-  .main-menu ul {
-    gap: 40px;          /* menos espacio */
-    font-size: 14px;    /* texto un poco más pequeño */
-  }
-
-  .menu-container {
-    width: 90%;
-  }
-
-  .Titulos{
-     display: flex;
-     flex-direction: column; 
-     align-items: flex-start;      
-     margin-top: 20px;
-      }
+.Footer{
+    margin-top: auto;
+    text-align: center;
+    background-color: #7d4055d3;
+    color: #ffffffe6;
+    font-weight: 500;
+    padding: 40px;
 }
 
-/*--Medida para pantallas pequeñas--*/
-@media screen and (max-width: 480px) {
-  .main-menu ul {
+.Footer nav{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .menu-container {
-    width: 70%;
-  }
-
-  .Contenedor-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .Titulos{
-    display: flex;
-    flex-direction: column; 
-    align-items: center;      
-    text-align: center; 
-    margin-top: 20px;
-  }
-
-  .Welcome{
-    font-size: 20px;
-    font-family: Sour Gummy, cursive;
-    color: #613142;
-    margin-bottom: -30px;
-    margin-left: -20px;
-  }
-
-  .Titulo{
-    font-size: 50px;
-    font-family: Anothershabby, cursive;
-    font-weight: 300;
-    color: #4d0922;
-  }
-  
-  .Texto-presentacion{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 15px;
-    margin-top: 5px;
-    color: #381622;
-  }
-
-  .img-yo-animada{
-    width: 100px;
-    height: auto;
-    margin-top: -10px;
-  }
-
+    justify-content: center;
+    gap: 30px;
 }
+
+.Footer a{
+    text-decoration: none;
+    color:#ffc2d8;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.Footer a:hover{
+    background-color: #551e31;
+    color: #fecddf;
+}
+
