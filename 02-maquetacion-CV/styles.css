@@ -5,7 +5,8 @@
 }
 
 body{
-    background-color: #ffbdd7;
+    background: linear-gradient(180deg, #ffc1da, #ff87a7);
+    min-height: 100vh;
     line-height: 2.0;
     font-family: 'Poppins', sans-serif;
 }
@@ -16,21 +17,20 @@ header{
 
 .menu-container {
     border-radius: 50px;
-    background-color: rgba(77, 9, 34, 0.7);
-    padding: 15px;
-    width: 30%;
-    margin: 40px auto 0; 
+    background-color: #613142;
+    width: 90%;
+    max-width: 800px;
+    padding: 12px;
+    margin:0 auto;
 }
 
 .main-menu ul {
     display: flex;
     justify-content: center;
+    
     list-style: none;
-    font-size: 13px;
-}
-
-.main-menu li {
-    margin: 0 25px;
+    font-size: 16px;
+    gap: 70px;
 }
 
 .main-menu a {
@@ -46,12 +46,125 @@ header{
     font-style: normal;
 }
 
-
-.contenedor-hoja{
+.Contenedor-principal {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-image: url(imagenes/hoja.PNG);
-    background-size: cover;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
+.Titulos{
+    display: flex;
+    flex-direction: column; 
+    margin-top: 20px;
+}
+
+.Welcome{
+    font-size: 24px;
+    font-family: Sour Gummy, cursive;
+    color: #613142;
+    margin-bottom: -40px;
+    margin-left: 75px;
+}
+
+.Titulo{
+    font-size: 60px;
+    font-family: Anothershabby, cursive;
+    font-weight: 300;
+    color: #4d0922;
+}
+
+.Texto-presentacion{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    color: #381622;
+}
+
+.img-yo-animada{
+    width: 400px;
+    height: auto;
+}
+
+
+
+/*--Medida para pantallas medianas--*/
+@media screen and (max-width: 768px) {
+  .main-menu ul {
+    gap: 40px;          /* menos espacio */
+    font-size: 14px;    /* texto un poco más pequeño */
+  }
+
+  .menu-container {
+    width: 90%;
+  }
+
+  .Titulos{
+     display: flex;
+     flex-direction: column; 
+     align-items: flex-start;      
+     margin-top: 20px;
+      }
+}
+
+/*--Medida para pantallas pequeñas--*/
+@media screen and (max-width: 480px) {
+  .main-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .menu-container {
+    width: 70%;
+  }
+
+  .Contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Titulos{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;      
+    text-align: center; 
+    margin-top: 20px;
+  }
+
+  .Welcome{
+    font-size: 20px;
+    font-family: Sour Gummy, cursive;
+    color: #613142;
+    margin-bottom: -30px;
+    margin-left: -20px;
+  }
+
+  .Titulo{
+    font-size: 50px;
+    font-family: Anothershabby, cursive;
+    font-weight: 300;
+    color: #4d0922;
+  }
+  
+  .Texto-presentacion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px;
+    margin-top: 5px;
+    color: #381622;
+  }
+
+  .img-yo-animada{
+    width: 300px;
+    height: auto;
+    margin-top: -10px;
+  }
+
+}
