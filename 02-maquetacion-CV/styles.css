@@ -36,6 +36,23 @@ header{
 .main-menu a {
     color: #ffffff;
     text-decoration: none;
+    padding: 6px 12px; 
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Cuando el mouse pasa por encima de una seccion del menu */
+.main-menu a:hover {
+  background-color: #ffe4ef;
+  color: #613142;
+  font-weight: 500;
+}
+
+/* Sección del menu en la página actual */
+.main-menu a.active {
+  background-color: #ffe4ef;
+  color: #613142;
+  font-weight: 500;
 }
 
 /* --- FUENTE PERSONALIZADA --- */
