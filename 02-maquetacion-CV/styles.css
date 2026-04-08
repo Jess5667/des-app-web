@@ -248,11 +248,11 @@ header{
     display: flex;
     justify-content: flex-end;
     margin-right: 390px;
-    margin-top: -160px;
+    margin-top: -180px;
 }
 
 .img-yo{
-    width: 440px;
+    width: 600px;
     height: auto;
 }
 
