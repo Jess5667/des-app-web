@@ -217,24 +217,25 @@ header{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    margin-left: 70px;
 }
 
 .curva-titulo {
     width: 280px; /* Tamaño del arco */
     height: auto;
     margin-bottom: -53px;
-    margin-left: -65px;
+    margin-left: -60px;
 }
 
 .curva-titulo text {
     font-family: 'Sour Gummy', cursive;
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 550;
     fill: #653a49; 
 }
 
 .Sobre-mi{
-    font-size: 100px;
+    font-size: 115px;
     font-family: Anothershabby, cursive;
     font-weight: 300;
     margin-left: 20px;
@@ -242,6 +243,18 @@ header{
     text-shadow: 4px 4px 0px #ffffff;
 }
 
+.Img-flecha{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 390px;
+    margin-top: -160px;
+}
+
+.img-yo{
+    width: 440px;
+    height: auto;
+}
 
 /*-------------FOOTER---------------*/
 .Footer{
