@@ -209,8 +209,8 @@ header{
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-left: 185px;
+    margin-left: 370px;
+    margin-top: 10px;
 }
 
 .Titulos-sobremi{
