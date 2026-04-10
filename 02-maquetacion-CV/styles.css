@@ -235,7 +235,7 @@ header{
 }
 
 .Sobre-mi{
-    font-size: 115px;
+    font-size: 110px;
     font-family: Anothershabby, cursive;
     font-weight: 300;
     margin-left: 20px;
@@ -249,12 +249,31 @@ header{
     justify-content: flex-end;
     margin-right: 390px;
     margin-top: -180px;
+    position: relative;
 }
 
 .img-yo{
     width: 600px;
     height: auto;
+    display: block;
 }
+
+.Texto-hoja{
+    position: absolute;
+    top: 50.6%;  
+    left: 37%; 
+    width: 385px;
+    transform: rotate(-7deg);
+}
+
+.Texto-hoja p{
+    font-size: 15px;
+    color: #4d1227;
+    line-height: 2;
+    font-weight: 500;
+}
+
+
 
 /*-------------FOOTER---------------*/
 .Footer{
