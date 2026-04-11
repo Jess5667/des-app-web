@@ -123,7 +123,7 @@ header{
 }
 
 .Botones {
-    margin-top: 10px;
+    margin-top: -10px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -147,14 +147,14 @@ header{
     background-color: #fed3e3;
     color: #4d0922;
     border: 2px solid #653a49;
-    padding: 6px 20px;
+    padding: 4px 20px;
 }
 
 .btn-principal {
     background-color: #613142;
     color: #ffffff;
     border: 2px solid #653a49;
-    padding: 6px 20px;
+    padding: 4px 20px;
 }
 
 .Bloque-derecho {
@@ -188,12 +188,17 @@ header{
     width: 260px;
     height: auto;
     margin-right: 110px;
-    margin-top: 35px;
     animation: floatIn 1.2s ease-out;
 }
 
 
 /*----------SOBRE MI-----------*/
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Espacio entre la presentación y tus skills */
+}
+
 .Contenedor-sobremi{
     display: flex;
     flex-direction: row;
@@ -213,6 +218,7 @@ header{
     margin-top: 10px;
 }
 
+/*------------TITULOS PRINCIPALES------------*/
 .Titulos-sobremi{
     display: flex;
     flex-direction: column;
@@ -221,7 +227,7 @@ header{
 }
 
 .curva-titulo {
-    width: 280px; /* Tamaño del arco */
+    width: 280px;
     height: auto;
     margin-bottom: -53px;
     margin-left: -60px;
@@ -234,6 +240,7 @@ header{
     fill: #653a49; 
 }
 
+
 .Sobre-mi{
     font-size: 110px;
     font-family: Anothershabby, cursive;
@@ -243,13 +250,17 @@ header{
     text-shadow: 4px 4px 0px #ffffff;
 }
 
+/*------------IMAGEN DE PRESENTACION------------*/
+
 .Img-flecha{
     flex: 1;
     display: flex;
     justify-content: flex-end;
     margin-right: 390px;
-    margin-top: -180px;
+    margin-top: -165px;
     position: relative;
+    transform: scale(1.05);
+    transform-origin: center right;
 }
 
 .img-yo{
@@ -258,10 +269,12 @@ header{
     display: block;
 }
 
+
+/*------------TEXTO SOBRE LA HOJA------------*/
 .Texto-hoja{
     position: absolute;
-    top: 50.6%;  
-    left: 37%; 
+    top: 44%;  
+    left: 15%; 
     width: 385px;
     transform: rotate(-7deg);
 }
@@ -274,6 +287,338 @@ header{
 }
 
 
+/*------------SECCION DE FORMACION------------*/
+.Seccion-formacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    margin-top: -100px;
+    gap:40px;
+}
+
+/*------------TITULOS SECUNDARIOS------------*/
+.Titulos-formacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -260px;
+    margin-top: 10px;
+}
+
+.curva-titulo-skills {
+    width: 320px;
+    height: auto;
+    margin-bottom: -36px;
+    margin-left: -370px;
+}
+
+.curva-titulo-skills text {
+    font-family: 'Sour Gummy', cursive;
+    font-size: 55px;
+    font-weight: 550;
+    fill: #653a49;
+}
+
+.Titulo-principal-formacion{
+    font-size: 80px;
+    font-family: Anothershabby, cursive;
+    font-weight: 300;
+    margin-left: -170px;
+    color: #4d0922;
+    text-shadow: 4px 4px 0px #ffffff;
+}
+
+/*------------CONTENEDOR PARA LOS BLOQUES------------*/
+.Contenedor-formacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1100px; 
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: -20px;
+    gap: 35px;
+}
+
+
+/*--------------BLOQUES DE INFORMACION-----------------*/
+.Bloque-habilidades,.Bloque-educacion, .Bloque-idiomas{
+    background-image: url("imagenes/textura1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    opacity: 0.87;
+}
+
+
+/*--------------TITULOS CURVOS-----------------*/
+.titulo-curvo-educacion,
+.titulo-curvo-idiomas,
+.titulo-curvo-habilidades{
+    width:100%;
+    height: 110px;
+    font-family: 'Fredoka', cursive;
+}
+
+
+/*--------------EDUCACION-----------------*/
+.Bloque-educacion{
+    flex: 0 0 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #613142;
+    min-height: 500px;
+    border-radius: 90px;
+    padding: 40px;
+}
+
+.img-educacion{
+    width: 130px;
+    height: auto;
+}
+
+.titulo-curvo-educacion{
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+.titulo-curvo-educacion text{
+    font-size: 65px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    fill: #ffe4ef; 
+    text-shadow: 4px 4px 5px #5a0925;
+}
+
+.IDM{
+    background-color: #ff9cb7;
+    color: #4d0922;
+    border-radius: 40px;
+    padding: 3px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 5px;
+
+}
+
+.UNACAR{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 27px;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+.Prepa{
+    background-color: #ff9cb7;
+    color: #4d0922;
+    border-radius: 40px;
+    padding: 3px 12px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.Campus{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 27px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+
+/*--------------IDIOMAS-----------------*/
+.Bloque-idiomas{
+    flex: 0 0 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #613142;
+    min-height: 500px;
+    border-radius: 90px;
+    padding: 40px;
+}
+
+.img-avioncito{
+    width: 98px;
+    height: auto;
+    margin-left: 127px;
+    margin-top: -28px;
+    margin-bottom: -32px;
+    rotate: 0.5deg;
+}
+
+.titulo-curvo-idiomas{
+    margin-top: -22px;
+}
+
+.titulo-curvo-idiomas text{
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    fill: #ffe4ef; 
+    text-shadow: 4px 4px 5px #5a0925;
+}
+
+.Español{
+    background-color: #ff9cb7;
+    color: #4d0922;
+    border-radius: 40px;
+    padding: 0.9px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+.Lengua-materna{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 115px;
+}
+
+.img-idiomas{
+    display: flex;
+    justify-content: center;
+    width: 145px;
+    height: auto;
+    margin-top: -118px;
+}
+
+.Inglés{
+    background-color: #ff9cb7;
+    color: #4d0922;
+    border-radius: 40px;
+    padding: 0.5px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.Certificación{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.Cambridge{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+
+/*--------------HABILIDADES-----------------*/
+.Bloque-habilidades{
+    flex-basis: 80%;
+    background-color: #613142;
+    border-radius: 100px;
+    min-height: 600px;
+    margin-top: -10px;
+    padding: 40px;
+}
+
+.titulo-curvo-habilidades{
+    margin-top: -2px;
+    margin-left: -145px;
+}
+
+.titulo-curvo-habilidades text{
+    font-size: 66px;
+    font-weight: 800;
+    letter-spacing: 3.5px;
+    fill: #ffe4ef; 
+    text-shadow: 4px 4px 5px #5a0925;
+}
+
+.Fila-habilidades, .Fila-software{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.habilidad-item, .tipo-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    transform: scale(1.05);
+    transform-origin: center right;
+}
+
+.software-item, .canva-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    margin-top: -15px;
+    color: #ffaccc;
+    transform: scale(1.05);
+    transform-origin: center right;
+}
+
+.habilidad-item img{
+    width: 128px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.tipo-item img{
+    width: 150px;
+    height: auto;
+    margin-bottom: 1px;
+}
+
+.software-item img{
+    width: 78px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.canva-item img{
+    width: 95px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+
+.Etiqueta-software{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+.software-skills{
+    font-size: 20px;
+    background-color: #ff9cb7;
+    color: #4d0922;
+    border-radius: 40px;
+    padding: 2px 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
 
 /*-------------FOOTER---------------*/
 .Footer{
