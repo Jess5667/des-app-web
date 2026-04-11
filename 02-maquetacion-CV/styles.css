@@ -214,6 +214,8 @@ main{
     flex: 1;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
     margin-left: 370px;
     margin-top: 10px;
 }
@@ -222,6 +224,8 @@ main{
 .Titulos-sobremi{
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 5;
     margin-top: 20px;
     margin-left: 70px;
 }
@@ -277,6 +281,7 @@ main{
     left: 15%; 
     width: 385px;
     transform: rotate(-7deg);
+    z-index: 10;
 }
 
 .Texto-hoja p{
@@ -286,6 +291,24 @@ main{
     font-weight: 500;
 }
 
+/*------------ADORNOS------------*/
+.adorno1-sobremi{
+    position: absolute;
+    top: -110px;
+    left: -600px;
+    width: 550px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.adorno2-sobremi{
+    position: absolute;
+    bottom: -150px;
+    right: -523px;
+    width: 550px;
+    z-index: 15;
+    pointer-events: none;
+}
 
 /*------------SECCION DE FORMACION------------*/
 .Seccion-formacion{
@@ -301,6 +324,7 @@ main{
 .Titulos-formacion{
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
     margin-left: -260px;
     margin-top: 10px;
@@ -309,6 +333,8 @@ main{
 .curva-titulo-skills {
     width: 320px;
     height: auto;
+    position: relative;
+    z-index: 5;
     margin-bottom: -36px;
     margin-left: -370px;
 }
@@ -327,7 +353,20 @@ main{
     margin-left: -170px;
     color: #4d0922;
     text-shadow: 4px 4px 0px #ffffff;
+    position: relative;
+    z-index: 5;
 }
+
+/*------------ADORNOS FORMACION------------*/
+.adorno3-sobremi{
+    position: absolute;
+    top: -19px;
+    right: -128px;
+    width: 250px;
+    z-index: 1;
+    pointer-events: none;
+}
+
 
 /*------------CONTENEDOR PARA LOS BLOQUES------------*/
 .Contenedor-formacion {
