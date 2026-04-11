@@ -659,6 +659,110 @@ main{
     font-weight: 500;
 }
 
+
+/*--------------PORTAFOLIO-----------------*/
+
+/*------------TITULOS PRINCIPALES ------------*/
+.Contenedor-titulos-portafolio{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+    margin-left: 300px;
+}
+
+.curva-titulo-portafolio {
+    width: 280px;
+    height: auto;
+    margin-bottom: -48px;
+    margin-left: -22px;
+}
+
+.curva-titulo-portafolio text {
+    font-family: 'Sour Gummy', cursive;
+    font-size: 53px;
+    font-weight: 550;
+    letter-spacing: 1.5px;
+    fill: #653a49; 
+}
+
+.Titulo-principal-portafolio{
+    font-size: 90px;
+    font-family: Anothershabby, cursive;
+    font-weight: 300;
+    margin-left: 20px;
+    color: #4d0922;
+    text-shadow: 4px 4px 0px #ffffff;
+    position: relative;
+    z-index: 5;
+}
+
+
+/*--------------ADORNO PORTAFOLIO-----------------*/
+.adorno1-portafolio{
+    position: absolute;
+    top: 175px;
+    left: 632px;
+    width: 225px;
+    transform: rotate(10deg);
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/*--------------CURVA TENDEDERO----------------*/
+.Contenedor-tendedero1{
+    width:100%;
+    height: 350px;
+    margin-top: -90px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.curva-tendedero path{
+    stroke-width: 7;
+    stroke-linecap: round;
+}
+
+.polaroid1-portafolio, .polaroid2-portafolio, .polaroid3-portafolio{
+    position: absolute;
+    z-index: 2;
+}
+
+.polaroid1-portafolio{
+    width: 490px;
+    height: auto;
+    top: 64px;
+    left: 20%;
+    transform: rotate(4deg);
+}
+
+.polaroid2-portafolio{
+    width: 550px;
+    height: auto;
+    top: 21px;
+    left: 48%;
+    transform: rotate(-8deg);
+}
+
+.Contenedor-tendedero2{
+    width:100%;
+    height: 550px;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.polaroid3-portafolio{
+    width: 550px;
+    height: auto;
+    top: 32px;
+    left: 35%;
+    transform: rotate(-1deg);
+}
+
 /*-------------FOOTER---------------*/
 .Footer{
     margin-top: auto;
