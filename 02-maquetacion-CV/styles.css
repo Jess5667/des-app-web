@@ -807,6 +807,7 @@ main{
     font-family: 'Anothershabby', cursive;
     color: #4d0922;
     text-shadow: 1px 1px 0px #fcc0d6;
+    text-decoration: none;
     text-align: center;
     width: 100%; 
     max-width: 450px;
