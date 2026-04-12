@@ -1065,13 +1065,87 @@ main{
     color: #fecddf;
 }
 
+/*-------------DISEÑO WEB-----------*/
+.Contenedor-titulo-diseño-web{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.Contenedor-titulo-diseño-web h1{
+    font-size: 70px;
+    font-family: Anothershabby, cursive;
+    font-weight: 300;
+    margin-left: -660px;
+    color: #4d0922;
+    text-shadow: 4px 4px 0px #ffffff;
+}
+
+.Caja-mira{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: -210px;
+    margin-bottom: 120px;
+    position: relative;
+    
+}
+
+.Caja-mira video{
+    width: 550px;
+    height: auto;
+    border: 5px solid rgb(100, 40, 69);
+    border-radius: 50px;
+    box-shadow: 6px 6px 4px #613142bb;
+}
+
+.nota{
+    display: flex;
+    align-items: flex-start;
+    width: 40%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.nota img{
+    width: 570px;
+    height: auto;
+    margin-top: -210px;
+    margin-left: 135px;
+    transform: rotate(2deg);
+}
+
+.exclamacion{
+    position: absolute;
+    z-index: 10;
+    margin-left: 480px;
+    margin-top: -318px
+}
+
+.exclamacion img{
+    width: 200px;
+    height: auto;
+}
+
+.etiqueta-venta{
+    position: absolute;
+    z-index: 10;
+    margin-bottom: -255px;
+    margin-left: 480px;
+}
+
+.etiqueta-venta img{
+    width: 290px;
+    height: auto;
+}
 
 /*-----------ADAPTACIÓN--------------*/
 @media screen and (max-width: 1300px) {
-    body {
-        min-width: 1100px;   
-        overflow-x: auto;    
-    }
 
     .Bloque-izquierdo, .Bloque-derecho {
         transform: scale(1.0);
@@ -1089,11 +1163,6 @@ main{
 }
 
 @media screen and (max-width: 768px) {
-    
-    body {
-        min-width: 1100px;   /* Fuerza el ancho mínimo = el de tu diseño */
-        overflow-x: auto;    /* Aparece scroll horizontal si hace falta */
-    }
 
     .Bloque-izquierdo, .Bloque-derecho {
         transform: scale(0.9);
@@ -1114,4 +1183,12 @@ main{
         width: 100%;
     }
     
+}
+
+body,html{
+    width: 100% !important; 
+    overflow-x: hidden !important;
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
