@@ -840,6 +840,201 @@ main{
     margin-top: 395px;
 }
 
+
+/*--------------DISEÑO E ILUSTRACIÓN---------------*/
+
+/*------------DISEÑOS------------*/
+.Contenedor-titulo-diseño{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.Contenedor-titulo-diseño h1{
+    font-size: 70px;
+    font-family: Anothershabby, cursive;
+    font-weight: 300;
+    margin-left: -400px;
+    margin-bottom: -30px;
+    color: #4d0922;
+    text-shadow: 4px 4px 0px #ffffff;
+}   
+
+.Contenedor-imagenes-diseño{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.Contenedor-texto h2{
+    display: flex;
+    justify-content: center;
+    font-size: 27px;
+    font-family: 'Sour Gummy', cursive;
+    font-weight: 600;
+    color: #833651;
+    margin-bottom: 15px;
+}
+
+.Caja-cartel img{
+    width: 330px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: #d34b7be6 1px 1px 15px;
+}
+
+.Caja-cartel:hover img{
+    transform: scale(1.1);
+    box-shadow: #d34b7be6 1px 1px 25px;
+}
+
+/*------------REDES SOCIALES------------*/
+.Contenedor-titulo-redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.Contenedor-titulo-redes h1{
+    font-size: 70px;
+    font-family: Anothershabby, cursive;
+    font-weight: 300;
+    margin-left: -400px;
+    margin-bottom: -30px;
+    color: #4d0922;
+    text-shadow: 4px 4px 0px #ffffff;
+}
+
+.Contenedor-imagenes-redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.Caja-redes-lumina{
+    margin-bottom: 100px
+}
+
+.Caja-redes-lumina img{
+    width: 350px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: #d34b7be6 1px 1px 15px;
+}
+
+.Caja-redes-lumina:hover img{
+    transform: scale(1.1);
+    box-shadow: #d34b7be6 1px 1px 15px;
+}
+
+.Caja-redes-lumina video{
+    width: 270px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: #d34b7be6 1px 1px 15px;
+}
+
+.Caja-redes-lumina:hover video{
+    transform: scale(1.1);
+    box-shadow: #d34b7be6 1px 1px 15px;
+}
+
+.Caja-redes-xmedia{
+    margin-top: -90px;
+}
+.Caja-redes-lumina p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 5px;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.Caja-redes-xmedia img{
+    width: 400px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: #d34b7be6 1px 1px 15px;
+}
+
+.Caja-redes-xmedia img:hover{
+    transform: scale(1.1);
+    box-shadow: #d34b7be6 1px 1px 15px;
+}
+
+.Caja-redes-xmedia video{
+    width: 270px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: #d34b7be6 1px 1px 15px;
+}
+
+.Caja-redes-xmedia:hover video{
+    transform: scale(1.1);
+    box-shadow: #d34b7be6 1px 1px 15px;
+}
+
+.Caja-redes-xmedia p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 5px;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+/*----------------ILUSTRACIONES-------------------*/
+.Contenedor-titulo-ilustracion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.Contenedor-titulo-ilustracion h1{
+    font-size: 70px;
+    font-family: Anothershabby, cursive;
+    font-weight: 300;
+    margin-left: -900px;
+    color: #4d0922;
+    text-shadow: 4px 4px 0px #ffffff;
+}
+
+.Contenedor-imagenes-ilustracion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.Caja-ilustracion img{
+    width: 350px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: #d34b7be6 1px 1px 15px;
+}
+
+.Caja-ilustracion:hover img{
+    transform: scale(1.1);
+    box-shadow: #d34b7be6 1px 1px 15px;
+}
+
 /*-------------FOOTER---------------*/
 .Footer{
     margin-top: auto;
