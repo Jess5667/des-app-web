@@ -850,7 +850,7 @@ main{
     align-items: center;
     gap: 30px;
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .Contenedor-titulo-diseño h1{
@@ -878,7 +878,7 @@ main{
     font-family: 'Sour Gummy', cursive;
     font-weight: 600;
     color: #833651;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .Caja-cartel img{
@@ -900,7 +900,7 @@ main{
     align-items: center;
     gap: 30px;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .Contenedor-titulo-redes h1{
@@ -960,7 +960,8 @@ main{
     margin-left: 5px;
     font-size: 15px;
     line-height: 25px;
-    font-weight: 400;
+    font-weight: 500;
+    color: #762241;
 }
 
 .Caja-redes-xmedia img{
@@ -995,7 +996,8 @@ main{
     margin-left: 5px;
     font-size: 15px;
     line-height: 25px;
-    font-weight: 400;
+    font-weight: 500;
+    color: #762241;
 }
 
 /*----------------ILUSTRACIONES-------------------*/
@@ -1003,7 +1005,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
 }
 
 .Contenedor-titulo-ilustracion h1{
@@ -1021,6 +1022,7 @@ main{
     justify-content: center;
     gap: 50px;
     margin-bottom: 20px;
+    margin-top: 30px; 
 }
 
 .Caja-ilustracion img{
@@ -1033,6 +1035,100 @@ main{
 .Caja-ilustracion:hover img{
     transform: scale(1.1);
     box-shadow: #d34b7be6 1px 1px 15px;
+}
+
+
+/*-------------DISEÑO WEB-----------*/
+.Contenedor-titulo-diseño-web{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.Contenedor-titulo-diseño-web h1{
+    font-size: 70px;
+    font-family: Anothershabby, cursive;
+    font-weight: 300;
+    margin-left: -660px;
+    color: #4d0922;
+    text-shadow: 4px 4px 0px #ffffff;
+}
+
+.Caja-mira{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    position: relative;
+    
+}
+
+.nota-colores{
+    position: absolute;
+    z-index: 1;
+    top: -310px; 
+    left: 57%;
+    transform: rotate(4deg);
+}
+
+.nota-colores img {
+    width: 550px;
+    height: auto;
+}
+
+.Caja-mira video{
+    width: 560px;
+    height: auto;
+    border: 5px solid rgb(100, 40, 69);
+    border-radius: 50px;
+    box-shadow: 6px 6px 4px #613142bb;
+    position: relative; 
+    z-index: 2;
+}
+
+.exclamacion{
+    position: absolute;
+    z-index: 10;
+    margin-right: 500px;
+    margin-top: -280px
+}
+
+.exclamacion img{
+    width: 200px;
+    height: auto;
+    transform: rotate(-20deg);
+}
+
+.etiqueta-venta{
+    position: absolute;
+    z-index: 10;
+    margin-bottom: -255px;
+    margin-right: -400px;
+}
+
+.etiqueta-venta img{
+    width: 290px;
+    height: auto;
+}
+
+.descripcion-mira{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 700px;
+    margin-top: -130px;
+    margin-bottom: 90px;
+    background-color: #c27993;
+    color:#67223b;
+    border-radius: 40px;
+    font-weight: 500;
+    padding: 10px 30px;
 }
 
 /*-------------FOOTER---------------*/
@@ -1065,84 +1161,6 @@ main{
     color: #fecddf;
 }
 
-/*-------------DISEÑO WEB-----------*/
-.Contenedor-titulo-diseño-web{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
-
-.Contenedor-titulo-diseño-web h1{
-    font-size: 70px;
-    font-family: Anothershabby, cursive;
-    font-weight: 300;
-    margin-left: -660px;
-    color: #4d0922;
-    text-shadow: 4px 4px 0px #ffffff;
-}
-
-.Caja-mira{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    margin-top: -210px;
-    margin-bottom: 120px;
-    position: relative;
-    
-}
-
-.Caja-mira video{
-    width: 550px;
-    height: auto;
-    border: 5px solid rgb(100, 40, 69);
-    border-radius: 50px;
-    box-shadow: 6px 6px 4px #613142bb;
-}
-
-.nota{
-    display: flex;
-    align-items: flex-start;
-    width: 40%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.nota img{
-    width: 570px;
-    height: auto;
-    margin-top: -210px;
-    margin-left: 135px;
-    transform: rotate(2deg);
-}
-
-.exclamacion{
-    position: absolute;
-    z-index: 10;
-    margin-left: 480px;
-    margin-top: -318px
-}
-
-.exclamacion img{
-    width: 200px;
-    height: auto;
-}
-
-.etiqueta-venta{
-    position: absolute;
-    z-index: 10;
-    margin-bottom: -255px;
-    margin-left: 480px;
-}
-
-.etiqueta-venta img{
-    width: 290px;
-    height: auto;
-}
 
 /*-----------ADAPTACIÓN--------------*/
 @media screen and (max-width: 1300px) {
