@@ -739,7 +739,7 @@ main{
     margin-top: -87px;
     margin-bottom: 30px;
     position: relative;
-    z-index: 1;
+    z-index: 20;
 }
 
 .curva-tendedero path{
@@ -779,7 +779,7 @@ main{
     margin-top: -5px;
     margin-bottom: 100px;
     position: relative;
-    z-index: 1;
+    z-index: 10;
 }
 
 .Contenedor-polaroid3{
@@ -798,11 +798,24 @@ main{
     height: auto;
 }
 
+.Contenedor-polaroid1:hover{
+    transform: rotate(4deg) scale(1.13);
+}
+
+.Contenedor-polaroid2:hover{
+    transform: rotate(-8deg) scale(1.13);
+}
+
+.Contenedor-polaroid3:hover{
+    transform: rotate(-1deg) scale(1.13);
+}
+
 /*--------------TITULOS POLAROID-----------------*/
 
 .Titulo-polaroid1,.Titulo-polaroid2, .Titulo-polaroid3{
     position:absolute;
-    z-index: 5;
+    z-index: 30;
+    display: inline-block;
     font-size: 24px;
     font-family: 'Anothershabby', cursive;
     color: #4d0922;
