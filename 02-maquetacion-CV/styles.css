@@ -1124,10 +1124,105 @@ main{
     max-width: 700px;
     margin-top: -130px;
     margin-bottom: 90px;
-    background-color: #c27993;
-    color:#67223b;
+    background-color: #793c52;
+    color:#ffe3ed;
+    box-shadow: 6px 6px 4px #643d4bbb;
     border-radius: 40px;
     font-weight: 500;
+    padding: 10px 30px;
+}
+
+/*---------------MODELADO 3D-----------------*/
+
+.Contenedor-titulo-modelado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.Contenedor-titulo-modelado h1{
+    font-size: 70px;
+    font-family: Anothershabby, cursive;
+    font-weight: 300;
+    margin-left: -660px;
+    color: #4d0922;
+    text-shadow: 4px 4px 0px #ffffff;
+}
+
+.Caja-modelado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: -20px;
+    margin-bottom: -10px;
+    position: relative;
+}
+
+.Caja-modelado video{
+    width: 560px;
+    height: auto;
+    border: 5px solid rgb(100, 40, 69);
+    border-radius: 50px;
+    box-shadow: 6px 6px 5px #61314265;
+    position: relative; 
+    z-index: 2;
+}
+
+.nota-aprendizaje{
+    position: absolute;
+    z-index: 10;
+    margin-right: 500px;
+    margin-top: -180px
+}
+
+.nota-aprendizaje img{
+    width: 380px;
+    height: auto;
+    transform: rotate(2deg);
+}
+
+.estrellas{
+    position: absolute;
+    z-index: 10;
+    margin-top: -250px;
+    margin-right: -520px;
+}
+
+.estrellas img{
+    width: 320px;
+    height: auto;
+    transform: rotate(-5deg);
+}
+
+.tresde-recorte{
+    position: absolute;
+    z-index: 10;
+    margin-top: 205px;
+    margin-right: -525px;
+}
+
+.tresde-recorte img{
+    width: 250px;
+    height: auto;
+    transform: rotate(2deg);
+}
+
+.descripcion-modelado{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 700px;
+    margin-bottom: 60px;
+    background-color: #793c52;
+    color:#ffe3ed;
+    box-shadow: 6px 6px 4px #643d4bbb;
+    border-radius: 40px;
+    font-weight: 400;
     padding: 10px 30px;
 }
 
