@@ -1226,6 +1226,122 @@ main{
     padding: 10px 30px;
 }
 
+/*-----------------FORMULARIO CONTACTO-----------------*/
+.contenedor-formulario{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 60%;
+    max-width: 1000px;
+    height: auto;
+    margin: 70px auto 40px auto;
+    padding: 50px;
+    border-radius: 80px;
+    background-color: #793c52f6; 
+    background-image: url("imagenes/textura1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    opacity: 1;
+}
+
+.contacto-texto{
+    margin-top: -105px;
+}
+
+.contacto-texto h1{
+    font-family: Anothershabby, cursive;
+    font-size: 50px;
+    color: #ffc9de; 
+    text-shadow: 4px 4px 0px #400c20;
+    font-weight: 400;
+}
+
+.contacto-texto p{
+    text-align: justify;
+    max-width: 300px;
+    color: #fff0f6;
+    text-shadow: 2px 2px 3px #280c1699;
+}
+
+.correo-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.correo-info img{
+    width: 60px;
+    height: auto;
+}
+
+.correo-info a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff0f6;
+    transition: 0.3s;
+}
+
+.correo-info a:hover{
+    color: #ff9cb7;
+}
+
+.contenedor-formulario form{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding: 40px;
+    border-radius: 40px;
+    width: 400px;
+}
+
+.contenedor-formulario input, .contenedor-formulario textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 5px;
+    background-color: hsl(333, 100%, 91%);
+    border: 2px solid #4d0922;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4d0922;
+}
+
+.contenedor-formulario textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contacto-form input::placeholder,
+.contacto-form textarea::placeholder {
+    color: #511e2fc4;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.contacto-form button{
+    padding: 10px;
+    background-color: #ffa8bf;
+    color: #4d0922;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border: 2px solid #ffa8bf;
+    border-radius: 25px;
+    width: 170px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contacto-form button:hover{
+    background-color: #4d0922;
+    border: 2px solid #4d0922;
+    color: #ffffff;
+}
+
 /*-------------FOOTER---------------*/
 .Footer{
     margin-top: auto;
@@ -1254,48 +1370,6 @@ main{
 .Footer a:hover{
     background-color: #551e31;
     color: #fecddf;
-}
-
-
-/*-----------ADAPTACIÓN--------------*/
-@media screen and (max-width: 1300px) {
-
-    .Bloque-izquierdo, .Bloque-derecho {
-        transform: scale(1.0);
-        transform-origin: center center;
-    }
-
-    .Titulo{
-        font-size: 73px;
-    }
-
-    .Welcome{
-        margin-bottom: -50px;
-        margin-left: 110px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    .Bloque-izquierdo, .Bloque-derecho {
-        transform: scale(0.9);
-        transform-origin: center center;
-    }
-
-    .Titulo{
-        font-size: 60px;
-    }
-
-    .Welcome{
-        margin-bottom: -30px;
-        margin-left: 93px;
-    }
-
-    .Footer {
-        margin-top: auto;
-        width: 100%;
-    }
-    
 }
 
 body,html{
